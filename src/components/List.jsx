@@ -34,7 +34,7 @@ export default function List() {
 
   return (
     <>
-      <h1 className="text-6xl text-red-800"> Unsplash Cloner </h1>
+      <h1 className="text-6xl text-red-800"> Cloneur Unsplash </h1>
       <form onSubmit={handleSubmit}>
         <label className="text-2xl text-green-600 block mb-4 mt-6" htmlFor="search">
         Recherche des images dans le banque d'images ...
@@ -88,7 +88,7 @@ export default function List() {
       )}
 
       {/* Quand on atteint la dernière page */}
-      {photosApiData.maxPages === pageNumber && <p className="mt-10">No more images to show for that query.</p>}
+      {photosApiData.maxPages === pageNumber && <p className="mt-10">Il n'y a plus d'images à afficher pour cette requête.</p>}
     </>
   )
 }
